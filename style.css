@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    background-color: #224870;
+}
+
 main {
     font-family: "Roboto Mono", monospace;
     position: relative;
@@ -7,13 +12,16 @@ main {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    border: 1px solid #fff;
+    border: 1px solid black;
+    /* border: 1px solid #fff; */
+    /* color: black; */
     color: #fff;
     margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* box-shadow: 20px 15px 5px 10px #00000033; */
 }
 
 .circle::before {
@@ -28,14 +36,17 @@ main {
     left: calc(50% - 80px);
     top: calc(50% - 80px);
     /* Ponerlo en el centro arriba */
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
+    background-color: #00916e;
+    box-shadow: 15px 10px 5px 5px #00000033;
 }
 
 .seconds-sphere {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: black;
     position: absolute;
     left: calc(50% - 10px);
     top: calc(50% - 10px);
@@ -65,6 +76,7 @@ main {
     box-sizing: border-box;
     margin-left: 15px;
     border-color: transparent transparent transparent #fff;
+    /* border-color: transparent transparent transparent black; */
     transition: 100mx all ease;
     will-change: border-width;
     border-style: solid;
@@ -76,6 +88,7 @@ main {
 }
 
 .stop {
+    /* background-color: black; */
     background-color: #fff;
     height: 10px;
     width: 10px;
